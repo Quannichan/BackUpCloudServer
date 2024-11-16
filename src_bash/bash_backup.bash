@@ -16,7 +16,7 @@ ISCHANGE=0
 ISHASONSERVER=1
 
 mkdir -p "$BACKUP_DIR" "$TEMP_DIR"
-ress=$(curl -s -o "$TEMP_DIR/backup_downloaded.tar.gz" -w "%{http_code}" -X GET "$API_URL" \
+ress=$(curl -s -o "$TEMP_DIR/backup_downloaded.zip" -w "%{http_code}" -X GET "$API_URL" \
      -H "Authorization: $API_KEY" -k )
      
 if [ "$ress" -eq 000 ]; then
