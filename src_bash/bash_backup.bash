@@ -3,9 +3,9 @@
 export DISPLAY=:0
 export XAUTHORITY=/home/quannichan1308/.Xauthority
 
-APIIP="www.backup.tro24h.com"
+APIIP=""
 API_URL="https://$APIIP/api/download" 
-API_KEY="Bearer 6a9b1c2f9b35741c60c0a347c5a5f4b9de22781c258f672a2be8e2f7637b4c2d"                
+API_KEY="Bearer "                
 SOURCE_DIR="../BackupFolder"            # Thu muc sao luu
 SOURCE_DIR_NAME="BackupFolder" 			# Ten thu muc sao luu
 BACKUP_DIR="../BACKUP"                  # Thu muc luu
