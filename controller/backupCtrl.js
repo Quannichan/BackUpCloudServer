@@ -22,7 +22,7 @@ class backupCtrl {
     async ServiceGBU(req, res){
         if (fs.existsSync(BACKUP_FILE)) {
             console.log("donwload backup from " + req.ip);
-            res.download(BACKUP_FILE, 'backup.tar.gz', (err) => {
+            res.download(BACKUP_FILE, 'backup.zip', (err) => {
             if (err) {
                 console.error('Lỗi khi tải file:', err);
                 res.status(500).send('Lỗi khi tải file.');
