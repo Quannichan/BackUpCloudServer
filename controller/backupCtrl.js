@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const BACKUP_DIR = path.join(__dirname, '../backup');
-const BACKUP_FILE = path.join(BACKUP_DIR, 'backup.tar.gz');
+const BACKUP_FILE = path.join(BACKUP_DIR, 'backup.zip');
 
 if (!fs.existsSync(BACKUP_DIR)) {
   fs.mkdirSync(BACKUP_DIR);
