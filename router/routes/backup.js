@@ -16,7 +16,7 @@ const storage = multer.diskStorage({
     cb(null, BACKUP_DIR);
   },
   filename: (req, file, cb) => {
-    cb(null, 'backup.tar.gz'); // Ghi đè file cũ
+    cb(null, 'backup.zip'); // Ghi đè file cũ
   },
 });
 const upload = multer({ storage: storage });
